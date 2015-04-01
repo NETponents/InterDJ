@@ -15,12 +15,20 @@
         ?>
         <h1>Station <?php echo $row['sname'] ?></h1>
         <?php
-        $sid = explode(",", $row['sgarray'])[0];
-        $result2 = mysqli_query($db, "SELECT * FROM sdb WHERE id = " . $sid) or die("Query fail: " . mysqli_error());
+        $sid = explode(",", $row['sgarray']);
+        $result2 = mysqli_query($db, "SELECT * FROM sdb WHERE id = " . $sid[0]) or die("Query fail: " . mysqli_error());
         $row2 = mysqli_fetch_array($result2);
         ?>
         <h4>Now Playing: <?php echo $row2['title'] ?> by <?php echo $row2['artist'] ?></h4>
         <p>Up next: </p>
+        <?php
+        for($i = 1; $sid[$i] != null; $i++)
+        {
+            $result3 = mysqli_query($db, "SELECT * FROM sdb WHERE id = " . $sid[$i]) or die("Query fail: " . mysqli_error());
+            $row3 = mysqli_fetch_array($result3);
+            echo "<li>" . $row3['title'] . " by " . $row3['artist'] . "</li>";
+        }
+        ?>
     </body>
     <footer>
         
