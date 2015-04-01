@@ -6,9 +6,11 @@ $G_webmaster = 'example@example.com';
 $G_webmastername = 'First Last';
 // SQL properties
 $G_DB_uname = 'armmaster17';
-$G_DB_passwd = 'password';
-$G_DB_server = 'http://127.0.0.1:3306';
-$G_DB_userdb = 'udb';
-$G_DB_nowplayingdb = 'npdb';
-$G_DB_songsdb = 'sdb';
+$G_DB_passwd = '';
+$G_DB_server = '127.0.0.1';
+$G_DB_serverport = 3306;
+$G_DB_db = 'c9';
+$G_DB_usertb = 'udb';
+$G_DB_nowplayingtb = 'npdb';
+$G_DB_songstb = 'sdb';
 ?>
