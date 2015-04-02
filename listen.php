@@ -1,8 +1,9 @@
 <html>
     <header>
-        <?php require_once 'settings.php' ?>
+        <?php require_once 'header.php' ?>
     </header>
     <body>
+        <?php require_once 'bodyhead.php' ?>
         <?php
         $db = new mysqli($G_DB_server, $G_DB_uname, $G_DB_passwd, $G_DB_db, $G_DB_serverport);
         if ($db->connect_error) {
@@ -31,6 +32,6 @@
         ?>
     </body>
     <footer>
-        
+        <?php require_once 'footer.php' ?>
     </footer>
 </html>

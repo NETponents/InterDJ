@@ -1,12 +1,9 @@
 <html>
     <header>
-        <?php require_once 'settings.php' ?>
-        <!-- Google Analytics code goes here -->
-        <title><?php echo $G_name ?> - InterDJ</title>
+        <?php require_once 'header.php' ?>
     </header>
     <body>
-        <h1><?php echo $G_name ?> - InterDJ</h1>
-        <h3><?php echo $G_tag ?></h3>
+        <?php require_once 'bodyhead.php' ?>
         <p>Click join to start listening!</p>
         <?php
         $db = new mysqli($G_DB_server, $G_DB_uname, $G_DB_passwd, $G_DB_db, $G_DB_serverport);
@@ -26,7 +23,6 @@
         ?>
     </body>
     <footer>
-        <hr>
-        <p>Created with <a href="https://github.com/ARMmaster17/InterDJ">InterDJ</a>, maintained by <a href='mailto:<?php echo $G_webmaster ?>'><?php echo $G_webmastername ?></a></p>
+        <?php require_once 'footer.php' ?>
     </footer>
 </html>
