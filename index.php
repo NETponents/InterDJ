@@ -17,6 +17,10 @@
         {   
             echo $row['sname'];
             echo ' <a href=\'/listen.php?st=' . $row['id'] . '\'>JOIN</a>';
+            if(true) //Replace with DJadmin check
+            {
+                echo ' <a href=\'/dj.php?st=' . $row['id'] . '\'>MANAGE</a>';
+            }
             echo '<br>';
         }
 
