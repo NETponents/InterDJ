@@ -21,17 +21,6 @@
         $row2 = mysqli_fetch_array($result2);
         ?>
         <h4>Now Playing: <?php echo $row2['title'] ?> by <?php echo $row2['artist'] ?></h4>
-        <script src="dist/plyr.js"></script>
-        <script>
-            document.querySelectorAll(".player")[0].plyr.source("<?php echo $G_URL . "/audio/" . $row2['audiopath'] ?>");
-            document.querySelectorAll(".player")[0].plyr.play();
-            var media = document.querySelectorAll(".player")[0].plyr.media;
-            media.addEventListener("ended", function()
-            { 
-                console.log("Stopped");
-                location.reload();
-            });
-        </script>
         <p>Up next: </p>
         <?php
         for($i = 1; $sid[$i] != null; $i++)
