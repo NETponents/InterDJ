@@ -2,6 +2,7 @@
 // Site properties
 $G_name = 'Sample';
 $G_tag = 'Default tagline for sample InterDJ site';
+$G_URL = "http://interdj-armmaster17.c9.io";
 $G_webmaster = 'example@example.com';
 $G_webmastername = 'First Last';
 // SQL properties
