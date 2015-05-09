@@ -9,8 +9,16 @@
       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     </header>
     <body>
+        <div class="container">
       <?php require_once 'bodyhead.php' ?>
-      <p>Click join to start listening!</p>
+      <div class="row">
+          <div class="col-sm-6">
+            <h3>About this site</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+        </div>
+        <div class="col-sm-6">
+      <h3>Click join to start listening!</h3>
       <?php
       $db = new mysqli($G_DB_server, $G_DB_uname, $G_DB_passwd, $G_DB_db, $G_DB_serverport);
       if ($db->connect_error) {
@@ -30,6 +38,9 @@
         echo '<br>';
     }
     ?>
+    </div>
+    </div>
+    </div>
   </body>
   <footer>
     <?php require_once 'footer.php' ?>
