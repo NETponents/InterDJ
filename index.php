@@ -40,11 +40,7 @@
       </div>
     </nav>
   <div class="container">
-    <!--<?php require_once 'bodyhead.php' ?>-->
-    <div class="jumbotron">
-      <h1><?php echo $G_name ?> - InterDJ</h1>
-      <p><?php echo $G_tag ?></p> 
-    </div>
+    <?php require_once 'bodyhead.php' ?>
     <div class="row">
       <div class="col-sm-6">
         <h3>About this site</h3>
