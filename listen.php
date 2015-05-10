@@ -75,10 +75,16 @@
             echo "<li>" . $row3['title'] . " by " . $row3['artist'] . "</li>";
         }
         ?>
+        <hr />
+        <h4>Comment feed</h4>
+        <p><a href="#">User1 (DJ)</a>: Welcome to the station!</p>
+        <!--<br />-->
+        <p><a href="#">User2</a>: Hello!</p>
         </div>
         </div>
     </body>
     <footer>
+      <hr />
         <?php require_once 'footer.php' ?>
     </footer>
 </html>

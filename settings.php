@@ -1,10 +1,12 @@
 <?php
 // Site properties
-$G_name = 'Sample';
-$G_tag = 'Default tagline for sample InterDJ site';
+$G_name = 'PumpRadio';
+$G_tag = 'The original InterDJ station.';
 $G_URL = "http://interdj-armmaster17.c9.io";
 $G_webmaster = 'example@example.com';
-$G_webmastername = 'First Last';
+$G_webmastername = 'Joshua Zenn';
+// Site design
+$G_DS_bgbanner = "http://www.travelization.net/wp-content/uploads/2012/07/nature-panoramic-wallpapers-3000x768.jpg";
 // SQL properties
 $G_DB_uname = 'armmaster17';
 $G_DB_passwd = '';

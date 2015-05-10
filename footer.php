@@ -1,1 +1,1 @@
-<p>Created with <a href="https://github.com/ARMmaster17/InterDJ">InterDJ</a>, maintained by <a href='mailto:<?php echo $G_webmaster ?>'><?php echo $G_webmastername ?></a></p>
+<p>Created with <a href="https://github.com/ARMmaster17/InterDJ">InterDJ</a>, maintained by <a href='mailto:<?php echo $G_webmaster ?>'><?php echo $G_webmastername ?></a></p><iframe src="https://ghbtns.com/github-btn.html?user=ARMmaster17&repo=InterDJ&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
